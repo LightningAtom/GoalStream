@@ -47,7 +47,7 @@ require 'Requests_library.php';
 				<style>
 					th{text-align: center;border=\"1px\";}
 					td{text-align: center;border=\"1px\";}
-					table{box-shadow:inset 0 0 10px rgba(0,0,0,0.9); border: 1px solid black; bgcolor=\"#FBF0DB\" width: 100%;}
+					table{border: 1px solid black; bgcolor=\"#FBF0DB\" width: 100%;}
 				</style>
 				<table>";
 
