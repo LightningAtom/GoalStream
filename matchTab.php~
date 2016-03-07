@@ -5,10 +5,10 @@
 require 'Requests_library.php';
 
 	class Structure{
-		public $home_club;
-		public $away_club;
-		public $home_club_score;
-		public $away_club_score;
+		private $home_club;
+		private $away_club;
+		private $home_club_score;
+		private $away_club_score;
 		public function __constructor($home, $away, $homeScore, $awayScore){
 			$this->home_club = $home;
 			$this->away_club = $away;
