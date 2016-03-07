@@ -20,13 +20,13 @@ require 'Requests_library.php';
 	class Program {
 		
 		//getting data from servcer
-		private function getData($season, $championship, $clubID) {
+		public function getData($season, $championship, $clubID) {
 			$recievedData = (new getApi())->matchList(1, 1, 15, "asc", 0, '2012-02-13', 'current', $season, $championship, 'gclub_club', $clubID, 1);
 			$this->decodeJSON($recievedData);	
 		}
 	
 		//decoding JSON string into associating array
-		public function decodeJSON($jsonString){
+		private function decodeJSON($jsonString){
 			$this->parseData(json_decode($jsonString, true, 2));
 		}
 		

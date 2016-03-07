@@ -1,4 +1,4 @@
-
+{source}
 <?php
 
 //define('_JEXEC', 1) or die;
@@ -64,4 +64,4 @@ require 'Requests_library.php';
 	$program->getData(0, 0, 0);
 
 ?>
-
+{/source}
